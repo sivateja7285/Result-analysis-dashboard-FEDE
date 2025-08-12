@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard - Post Marks</title>
+    <link rel="stylesheet" href="faclty.css/post_marks.css">
+</head>
+<body>
+    <center>
+        <h1>Post Marks for Students</h1>
+        <form>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="">-- Select Course --</option>
+                <option value="CS101">CS101 - Programming</option>
+                <option value="CS205">CS205 - Data Structures</option>
+                <option value="CS315">CS315 - Computer Networks</option>
+            </select>
+            <br><br>
+
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Assignment Marks (20)</th>
+                    <th>Midterm Marks (30)</th>
+                    <th>Final Marks (50)</th>
+                </tr>
+                <tr>
+                    <td>STU001</td>
+                    <td>Ravi Kumar</td>
+                    <td><input type="number" max="20" min="0"></td>
+                    <td><input type="number" max="30" min="0"></td>
+                    <td><input type="number" max="50" min="0"></td>
+                </tr>
+                <tr>
+                    <td>STU002</td>
+                    <td>Sharma</td>
+                    <td><input type="number" max="20" min="0"></td>
+                    <td><input type="number" max="30" min="0"></td>
+                    <td><input type="number" max="50" min="0"></td>
+                </tr>
+                <tr>
+                    <td>STU003</td>
+                    <td>Amit Verma</td>
+                    <td><input type="number" max="20" min="0"></td>
+                    <td><input type="number" max="30" min="0"></td>
+                    <td><input type="number" max="50" min="0"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit" class="submit-btn">Submit Marks</button>
+        </form>
+    </center>
+</body>
+</html>

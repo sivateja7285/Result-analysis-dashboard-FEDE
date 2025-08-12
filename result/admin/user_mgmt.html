@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="admin.css/usermgmt.css">
+</head>
+<body>
+
+  <h2>User Registration</h2>
+
+  <form action="#" method="post">
+  
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role" required>
+      <option value="">--Select Role--</option>
+      <option value="admin">Admin</option>
+      <option value="student">Student</option>
+      <option value="faculty">Faculty</option>
+    </select><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Register</button>
+
+  </form>
+  
+<h2>Registered Users</h2>
+<table class="user-table">
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>role</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sivateja</td>
+      <td>sivateja@gmail.com</td>
+      <td>admin</td>
+      <td>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>no name</td>
+      <td>noname@uni.in</td>
+      <td>user</td>
+      <td>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </td>
+    </tr>
+     </tbody>
+</table>
+
+</body>
+</html>

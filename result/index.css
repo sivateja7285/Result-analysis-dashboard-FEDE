@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #e0f8fc;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.role {
+  background-color: rgb(245, 246, 247);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.role:hover {
+  transform: scale(1.05);
+}
+
+.role img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

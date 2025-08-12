@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Results - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css/result_ad.css">
+</head>
+<body>
+
+    <center>
+        <h1 class="heading">Student Results (Admin)</h1>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" placeholder="Search by Student Name or Course" onkeyup="searchResults()">
+
+        <!-- Add Result Form -->
+        <div class="form-card">
+            <h3>Add New Result</h3>
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="text" id="rollNo" placeholder="Roll No">
+            <input type="text" id="course" placeholder="Course Name">
+            <input type="text" id="courseCode" placeholder="Course Code">
+            <input type="number" id="marksObtained" placeholder="Marks Obtained">
+            <input type="number" id="totalMarks" placeholder="Total Marks">
+            <input type="text" id="grade" placeholder="Grade">
+            <input type="text" id="status" placeholder="Status (Pass/Fail)">
+            <button onclick="addResult()">Add Result</button>
+        </div>
+
+        <!-- Results Table -->
+        <div class="table-card">
+            <table id="resultsTable">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Roll No</th>
+                    <th>Course</th>
+                    <th>Course Code</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Ravi Kumar</td>
+                    <td>21CSE001</td>
+                    <td>Data Structures</td>
+                    <td>CSE201</td>
+                    <td>85</td>
+                    <td>100</td>
+                    <td>A</td>
+                    <td>Pass</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sita</td>
+                    <td>21CSE002</td>
+                    <td>Operating Systems</td>
+                    <td>CSE301</td>
+                    <td>74</td>
+                    <td>100</td>
+                    <td>B+</td>
+                    <td>Pass</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+    <script src="admin.js/student_results_admin.js"></script>
+</body>
+</html>
