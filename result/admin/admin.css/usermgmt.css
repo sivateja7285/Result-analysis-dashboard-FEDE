@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e4f6fb;
+    background-color: #cff4fb;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #1b4f72;
 }
-/* Table styling */
+
 .user-table {
     width: 100%;
     max-width: 700px;
@@ -69,7 +69,6 @@ button[type="submit"]:hover {
     overflow: hidden;
 }
 
-/* Table headers */
 .user-table th {
     background-color: #2e86de;
     color: white;
@@ -77,13 +76,11 @@ button[type="submit"]:hover {
     padding: 12px;
 }
 
-/* Table cells */
 .user-table td {
     padding: 12px;
     border-top: 1px solid #ccc;
 }
 
-/* Action buttons */
 .edit-btn, .delete-btn {
     padding: 6px 12px;
     border: none;

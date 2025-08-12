@@ -1,19 +1,15 @@
-/* admin_profile.css */
 
-/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    background-color: #cff4fb;
     margin: 0;
     padding: 0;
 }
 
-/* Heading */
 h1, h2 {
     color: #333;
 }
 
-/* Card Styling */
 .admin-card {
     background: white;
     padding: 20px;
@@ -23,19 +19,16 @@ h1, h2 {
     max-width: 800px;
 }
 
-/* Admin Image */
 .admin-img {
     border-radius: 50%;
     border: 3px solid #ccc;
 }
 
-/* Text Styling */
 p {
     font-size: 16px;
     color: #555;
 }
 
-/* List Styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -49,7 +42,6 @@ ul li {
     border-radius: 5px;
 }
 
-/* Table Styling */
 table {
     border-collapse: collapse;
     width: 60%;
